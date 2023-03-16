@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #042349;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.navbar a:hover::after {
+  width: 100%;
+  transition: 0.2s;
+}
+
+.main {
+  background: url(./images/Sprinkle.svg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main h1 {
+  color: #fff;
+  padding: 100px 0;
+}
+.main .secondary {
+  color: #fff;
+  max-width: 60%;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 80px;
+}/*# sourceMappingURL=styles.css.map */
